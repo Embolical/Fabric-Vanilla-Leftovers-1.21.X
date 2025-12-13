@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilla-leftovers",
+	"version": "${version}",
+	"name": "Vanilla Leftovers",
+	"description": "Adds missing stairs, buttons, pressure plates and other block variants that Mojang seemingly forgot about. This mod focuses on consistency across existing block families, filling in omissions where variants clearly belong. It does not aim to add every possible variant, only those that feel appropriate within vanilla Minecraft.",
+	"authors": [
+		"Embolical"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/Embolical",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vanilla-leftovers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.embolical.vanillaleftovers.VanillaLeftovers"
+		],
+		"fabric-datagen": [
+			"com.embolical.vanillaleftovers.VanillaLeftoversDataGenerator"
+		],
+		"client": [
+			"com.embolical.vanillaleftovers.VanillaLeftoversClient"
+		]
+	},
+	"mixins": [
+		"vanilla-leftovers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
