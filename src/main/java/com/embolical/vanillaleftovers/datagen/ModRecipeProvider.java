@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -63,6 +64,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('r', Blocks.POLISHED_ANDESITE)
                         .criterion(hasItem(Blocks.POLISHED_ANDESITE), conditionsFromItem(Blocks.POLISHED_ANDESITE))
                         .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_RED_SANDSTONE_WALL, 6)
+                        .pattern("   ")
+                        .pattern("rrr")
+                        .pattern("rrr")
+                        .input('r', Blocks.SMOOTH_RED_SANDSTONE)
+                        .criterion(hasItem(Blocks.SMOOTH_RED_SANDSTONE), conditionsFromItem(Blocks.SMOOTH_RED_SANDSTONE))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL, 6)
+                        .pattern("   ")
+                        .pattern("rrr")
+                        .pattern("rrr")
+                        .input('r', Blocks.STONE)
+                        .criterion(hasItem(Blocks.STONE), conditionsFromItem(Blocks.STONE))
+                        .offerTo(exporter);
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL, 6)
                         .pattern("   ")
                         .pattern("rrr")
@@ -98,6 +113,78 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('r', Blocks.PURPUR_BLOCK)
                         .criterion(hasItem(Blocks.PURPUR_BLOCK), conditionsFromItem(Blocks.PURPUR_BLOCK))
                         .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_SANDSTONE_WALL, 6)
+                        .pattern("   ")
+                        .pattern("rrr")
+                        .pattern("rrr")
+                        .input('r', Blocks.SMOOTH_SANDSTONE)
+                        .criterion(hasItem(Blocks.SMOOTH_SANDSTONE), conditionsFromItem(Blocks.SMOOTH_SANDSTONE))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_BRICK_WALL, 6)
+                        .pattern("   ")
+                        .pattern("rrr")
+                        .pattern("rrr")
+                        .input('r', Blocks.QUARTZ_BRICKS)
+                        .criterion(hasItem(Blocks.QUARTZ_BRICKS), conditionsFromItem(Blocks.QUARTZ_BRICKS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_NETHER_BRICK_FENCE, 6)
+                        .pattern("   ")
+                        .pattern("XrX")
+                        .pattern("XrX")
+                        .input('r', Items.NETHER_BRICK)
+                        .input('X', Blocks.RED_NETHER_BRICKS)
+                        .criterion(hasItem(Blocks.RED_NETHER_BRICKS), conditionsFromItem(Blocks.RED_NETHER_BRICKS))
+                        .offerTo(exporter);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.SMOOTH_STONE_STAIRS,
+                        Blocks.SMOOTH_STONE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.QUARTZ_BRICK_SLAB,
+                        Blocks.QUARTZ_BRICKS);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.QUARTZ_BRICK_STAIRS,
+                        Blocks.QUARTZ_BRICKS);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.QUARTZ_BRICK_SLAB,
+                        Blocks.QUARTZ_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.QUARTZ_BRICK_STAIRS,
+                        Blocks.QUARTZ_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.POLISHED_GRANITE_WALL,
+                        Blocks.POLISHED_GRANITE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.POLISHED_ANDESITE_WALL,
+                        Blocks.POLISHED_ANDESITE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.POLISHED_DIORITE_WALL,
+                        Blocks.POLISHED_DIORITE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.PRISMARINE_BRICK_WALL,
+                        Blocks.PRISMARINE_BRICKS);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.DARK_PRISMARINE_WALL,
+                        Blocks.DARK_PRISMARINE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.PURPUR_WALL,
+                        Blocks.PURPUR_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.SMOOTH_SANDSTONE_WALL,
+                        Blocks.SMOOTH_SANDSTONE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.QUARTZ_BRICK_WALL,
+                        Blocks.QUARTZ_BRICKS);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.QUARTZ_BRICK_WALL,
+                        Blocks.QUARTZ_BLOCK);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.SMOOTH_RED_SANDSTONE_WALL,
+                        Blocks.SMOOTH_RED_SANDSTONE);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.STONE_WALL,
+                        Blocks.STONE);
+
             }
         };
     }

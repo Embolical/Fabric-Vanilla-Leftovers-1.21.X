@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": "minecraft:red_nether_bricks",
+    "r": "minecraft:nether_brick"
+  },
+  "pattern": [
+    "   ",
+    "XrX",
+    "XrX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla-leftovers:red_nether_brick_fence"
+  }
+}

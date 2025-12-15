@@ -16,13 +16,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-//        valueLookupBuilder(BlockTags.FENCES).add(ModBlocks.RED_NETHER_BRICK_FENCE);
+        valueLookupBuilder(BlockTags.FENCES).add(ModBlocks.RED_NETHER_BRICK_FENCE);
         valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.POLISHED_ANDESITE_WALL);
         valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.POLISHED_DIORITE_WALL);
         valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.POLISHED_GRANITE_WALL);
         valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.DARK_PRISMARINE_WALL);
         valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.PRISMARINE_BRICK_WALL);
+        valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.QUARTZ_BRICK_WALL);
         valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.PURPUR_WALL);
+        valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+        valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.STONE_WALL);
+        valueLookupBuilder(BlockTags.WALLS).add(ModBlocks.SMOOTH_SANDSTONE_WALL);
         valueLookupBuilder(BlockTags.STAIRS).add(ModBlocks.SMOOTH_STONE_STAIRS);
         valueLookupBuilder(BlockTags.STAIRS).add(ModBlocks.QUARTZ_BRICK_STAIRS);
         valueLookupBuilder(BlockTags.SLABS).add(ModBlocks.QUARTZ_BRICK_SLAB);

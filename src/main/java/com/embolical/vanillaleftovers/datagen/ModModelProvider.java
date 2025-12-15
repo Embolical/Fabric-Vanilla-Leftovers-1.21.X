@@ -20,12 +20,14 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool andesitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_ANDESITE);
         BlockStateModelGenerator.BlockTexturePool granitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_GRANITE);
         BlockStateModelGenerator.BlockTexturePool dioritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_DIORITE);
-//        BlockStateModelGenerator.BlockTexturePool redNetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool redNetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_NETHER_BRICKS);
         BlockStateModelGenerator.BlockTexturePool quartzBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.QUARTZ_BRICKS);
         BlockStateModelGenerator.BlockTexturePool darkPrismarinePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.DARK_PRISMARINE);
         BlockStateModelGenerator.BlockTexturePool prismarineBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PRISMARINE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool purpurPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPUR_BLOCK);
-
+        BlockStateModelGenerator.BlockTexturePool smoothSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool smoothRedSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_RED_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool stonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.STONE);
 
         // REGISTER
         smoothStonePool.stairs(ModBlocks.SMOOTH_STONE_STAIRS);
@@ -36,10 +38,14 @@ public class ModModelProvider extends FabricModelProvider {
         dioritePool.wall(ModBlocks.POLISHED_DIORITE_WALL);
         darkPrismarinePool.wall(ModBlocks.DARK_PRISMARINE_WALL);
         prismarineBrickPool.wall(ModBlocks.PRISMARINE_BRICK_WALL);
-//        redNetherPool.wall(ModBlocks.RED_NETHER_BRICK_FENCE);
+        redNetherPool.fence(ModBlocks.RED_NETHER_BRICK_FENCE);
         purpurPool.wall(ModBlocks.PURPUR_WALL);
         quartzBrickPool.stairs(ModBlocks.QUARTZ_BRICK_STAIRS);
         quartzBrickPool.slab(ModBlocks.QUARTZ_BRICK_SLAB);
+        smoothSandstonePool.wall(ModBlocks.SMOOTH_SANDSTONE_WALL);
+        smoothRedSandstonePool.wall(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+        stonePool.wall(ModBlocks.STONE_WALL);
+        quartzBrickPool.wall(ModBlocks.QUARTZ_BRICK_WALL);
     }
 
     @Override

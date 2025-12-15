@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "r": "minecraft:quartz_bricks"
+    "r": "minecraft:smooth_sandstone"
   },
   "pattern": [
     "   ",
-    "   ",
+    "rrr",
     "rrr"
   ],
   "result": {
-    "count": 2,
-    "id": "vanilla-leftovers:quartz_brick_slab"
+    "count": 6,
+    "id": "vanilla-leftovers:smooth_sandstone_wall"
   }
 }
