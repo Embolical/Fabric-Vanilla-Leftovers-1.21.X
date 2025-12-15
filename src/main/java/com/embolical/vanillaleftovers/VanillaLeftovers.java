@@ -1,5 +1,8 @@
 package com.embolical.vanillaleftovers;
 
+import com.embolical.vanillaleftovers.block.ModBlocks;
+import com.embolical.vanillaleftovers.datagen.ModModelProvider;
+import com.embolical.vanillaleftovers.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,8 @@ public class VanillaLeftovers implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		//ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlocks.registerItemGroups();
 	}
 }

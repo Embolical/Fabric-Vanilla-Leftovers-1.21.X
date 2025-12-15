@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "minecraft:polished_deepslate"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-leftovers:polished_deepslate_button"
+  }
+}

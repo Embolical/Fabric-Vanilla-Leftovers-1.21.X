@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": "minecraft:quartz_bricks"
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "rrr"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla-leftovers:quartz_brick_slab"
+  }
+}

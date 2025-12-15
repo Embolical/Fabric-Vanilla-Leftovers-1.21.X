@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": "minecraft:prismarine_bricks"
+  },
+  "pattern": [
+    "   ",
+    "rrr",
+    "rrr"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla-leftovers:prismarine_brick_wall"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": "minecraft:polished_diorite"
+  },
+  "pattern": [
+    "   ",
+    "rrr",
+    "rrr"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla-leftovers:polished_diorite_wall"
+  }
+}

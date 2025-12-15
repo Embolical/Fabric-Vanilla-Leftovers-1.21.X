@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": "minecraft:smooth_stone"
+  },
+  "pattern": [
+    "r  ",
+    "rr ",
+    "rrr"
+  ],
+  "result": {
+    "count": 4,
+    "id": "vanilla-leftovers:smooth_stone_stairs"
+  }
+}

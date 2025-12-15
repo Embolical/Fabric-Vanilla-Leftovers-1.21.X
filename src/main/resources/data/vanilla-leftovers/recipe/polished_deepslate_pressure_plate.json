@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "r": "minecraft:polished_deepslate"
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "rr "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-leftovers:polished_deepslate_pressure_plate"
+  }
+}
