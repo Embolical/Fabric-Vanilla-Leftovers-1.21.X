@@ -33,5 +33,33 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(BlockTags.BUTTONS).add(ModBlocks.POLISHED_DEEPSLATE_BUTTON);
         valueLookupBuilder(BlockTags.PRESSURE_PLATES).add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
 
+        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(
+                ModBlocks.SMOOTH_STONE_STAIRS,
+                ModBlocks.QUARTZ_BRICK_STAIRS,
+                ModBlocks.QUARTZ_BRICK_SLAB,
+                ModBlocks.RED_NETHER_BRICK_FENCE,
+                ModBlocks.QUARTZ_BRICK_WALL,
+                ModBlocks.POLISHED_ANDESITE_WALL,
+                ModBlocks.POLISHED_DIORITE_WALL,
+                ModBlocks.POLISHED_GRANITE_WALL,
+                ModBlocks.DARK_PRISMARINE_WALL,
+                ModBlocks.PRISMARINE_BRICK_WALL,
+                ModBlocks.PURPUR_WALL,
+                ModBlocks.SMOOTH_RED_SANDSTONE_WALL,
+                ModBlocks.STONE_WALL,
+                ModBlocks.SMOOTH_SANDSTONE_WALL,
+                ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE,
+                ModBlocks.POLISHED_DEEPSLATE_BUTTON
+        );
+        valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(
+                        ModBlocks.QUARTZ_BRICK_STAIRS,
+                        ModBlocks.QUARTZ_BRICK_SLAB,
+                        ModBlocks.RED_NETHER_BRICK_FENCE,
+                        ModBlocks.QUARTZ_BRICK_WALL,
+                        ModBlocks.PURPUR_WALL,
+                        ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE,
+                        ModBlocks.POLISHED_DEEPSLATE_BUTTON
+                );
     }
 }

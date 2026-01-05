@@ -1,6 +1,7 @@
 package com.embolical.vanillaleftovers;
 
 import com.embolical.vanillaleftovers.datagen.ModBlockTagProvider;
+import com.embolical.vanillaleftovers.datagen.ModLootTableProvider;
 import com.embolical.vanillaleftovers.datagen.ModModelProvider;
 import com.embolical.vanillaleftovers.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -13,5 +14,6 @@ public class VanillaLeftoversDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
 	}
 }

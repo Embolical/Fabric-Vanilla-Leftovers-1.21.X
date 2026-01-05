@@ -21,7 +21,8 @@ public class ModBlocks {
             registerBlock("smooth_stone_stairs", settings -> new StairsBlock(
                     Blocks.SMOOTH_STONE.getDefaultState(), settings
                     .strength(2.0F, 6.0F)
-                    .requiresTool()));
+                    .requiresTool()
+            ));
 
     public static final Block QUARTZ_BRICK_STAIRS =
             registerBlock("quartz_brick_stairs", settings -> new StairsBlock(
@@ -33,7 +34,8 @@ public class ModBlocks {
     public static final Block QUARTZ_BRICK_SLAB =
             registerBlock("quartz_brick_slab", settings -> new SlabBlock(
                     settings.strength(2.0F, 6.0F)
-                            .requiresTool()));
+                            .requiresTool()
+            ));
 
     // BUTTONS
     public static final Block POLISHED_DEEPSLATE_BUTTON =
